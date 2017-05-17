@@ -1,6 +1,6 @@
 /*
-Hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CSS style.
-Press again to toggle.
+Hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CSS style. Press again to toggle.
+
 "visibility:hidden" can fail (rarely) because https://allyjs.io/tutorials/hiding-elements.html#the-css-properties-display-and-visibility
 */
 
