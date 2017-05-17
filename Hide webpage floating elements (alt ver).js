@@ -1,9 +1,8 @@
 /*
-This version works by appending a CSS rule to "document.head",
+This alternate version works by appending a CSS rule to "document.head",
 then appends the given class name to each floating element.
 
-*Supposed to work around the problem of child nodes having "visibility:visible", but
-Facebook runs code that automatically removes anything I append to "document.head".
+Overcomes the problem of child nodes having "visibility:visible", faced by the original version.
 */
 
 javascript:
