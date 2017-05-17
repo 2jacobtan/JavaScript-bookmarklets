@@ -15,7 +15,7 @@ if (typeof aoeuToggle != "number"){
         var aoeuElems = document.body.getElementsByTagName("*");
         aoeuFloats=[]; /*reset for each toggle on*/
         for (var i=0;i<aoeuElems.length;i++) {
-            var positionValue = window.getComputedStyle(aoeuElems[i],null).getPropertyValue("position");
+            var positionValue = window.getComputedStyle(aoeuElems[i]).getPropertyValue("position");
             if ( ["fixed","sticky"].includes(positionValue) ) {
                 aoeuFloats[aoeuFloats.length]=aoeuElems[i]; /*store the relevant element, for toggle purposes*/
                 aoeuElems[i].style.visibility = "hidden";   /*then hide it*/
