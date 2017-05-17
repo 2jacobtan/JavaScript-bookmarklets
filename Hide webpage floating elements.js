@@ -3,6 +3,7 @@ Hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CS
 Press again to toggle.
 "visibility:hidden" can fail (rarely) because https://allyjs.io/tutorials/hiding-elements.html#the-css-properties-display-and-visibility
 */
+
 javascript:
 if (typeof aoeuToggle != "number"){
     /* declare global variables for toggle functionality */
