@@ -53,7 +53,7 @@ if (typeof aoeuToggle != "number"){
             var positionValue = window.getComputedStyle(aoeuElems[i],null).getPropertyValue("position");
             if ( ["fixed","sticky"].includes(positionValue) ) {
                 aoeuFloats[aoeuFloats.length]=aoeuElems[i]; /*store the relevant element, for toggle purposes*/
-                aoeuElems[i].style.display = "none";   /*then hide it*/
+                aoeuElems[i].style.visibility = "hidden";   /*then hide it*/
             }
         }
         /*alert(aoeuFloats.length);*/
@@ -61,7 +61,7 @@ if (typeof aoeuToggle != "number"){
     } else{
         /* un-hide previously hidden elements */
         for(var i=0; i<aoeuFloats.length; i++){
-            aoeuFloats[i].style.display = "initial";
+            aoeuFloats[i].style.visibility = "initial";
         }
         aoeuToggle=0;
     }
