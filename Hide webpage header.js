@@ -26,7 +26,7 @@ if (typeof aoeuToggle != "number"){
     } else{
         /* un-hide previously hidden elements */
         for(var i=0; i<aoeuFloats.length; i++){
-            aoeuFloats[i].style.visibility = "initial";
+            aoeuFloats[i].style.visibility = "inherit";
         }
         aoeuToggle=0;
     }
