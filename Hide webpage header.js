@@ -35,7 +35,7 @@ if (typeof aoeuToggle != "object") var aoeuToggle = [];
 
 //version 3 (final)
 /*
-hides _all_ elements in a webpage with "position:fixed" CSS style
+hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CSS style
 press again to toggle
 */
 javascript:
