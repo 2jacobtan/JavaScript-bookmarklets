@@ -47,22 +47,16 @@ if (typeof aoeuToggle != "number"){
 (function(){
     if (aoeuToggle != 1){
         /* generate array of floating elements to be hidden */
-        (function(){
         var aoeuElems = document.body.getElementsByTagName("*");
         aoeuFloats=[]; /*reset for each toggle on*/
         for (var i=0;i<aoeuElems.length;i++) {
             var positionValue = window.getComputedStyle(aoeuElems[i],null).getPropertyValue("position");
             if ( ["fixed","sticky"].includes(positionValue) ) {
-                aoeuFloats[aoeuFloats.length]=aoeuElems[i];
+                aoeuFloats[aoeuFloats.length]=aoeuElems[i]; /*store the relevant element, for toggle purposes*/
+                aoeuElems[i].style.visibility = "hidden";   /*then hide it*/
             }
         }
         /*alert(aoeuFloats.length);*/
-        })();
-
-        /* hide all floating elements */
-        for(var i=0; i<aoeuFloats.length; i++){
-            aoeuFloats[i].style.visibility = "hidden";
-        }
         aoeuToggle=1;
     } else{
         /* un-hide previously hidden elements */
