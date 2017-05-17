@@ -51,7 +51,8 @@ if (typeof aoeuToggle != "number"){
         var aoeuElems = document.body.getElementsByTagName("*");
         aoeuFloats=[]; /*reset for each toggle on*/
         for (var i=0;i<aoeuElems.length;i++) {
-            if (window.getComputedStyle(aoeuElems[i],null).getPropertyValue("position") == "fixed") {
+            var positionValue = window.getComputedStyle(aoeuElems[i],null).getPropertyValue("position");
+            if ( ["fixed","sticky"].includes(positionValue) ) {
                 aoeuFloats[aoeuFloats.length]=aoeuElems[i];
             }
         }
