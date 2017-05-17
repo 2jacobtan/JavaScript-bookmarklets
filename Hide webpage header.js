@@ -1,42 +1,7 @@
-//version 1
-//hides the first header object in a webpage
-//press again to toggle
-javascript:
-if (typeof aoeuToggle != "number") var aoeuToggle;
-(function(){
-    var headers=document.getElementsByTagName("header");
-    if (aoeuToggle != 1){
-        headers[0].style.visibility = "hidden";
-        aoeuToggle=1;
-    } else{
-        headers[0].style.visibility = "initial";
-        aoeuToggle=0
-    }
-})();
-
-//version 2
-//hides _all_ header objects in a webpage
-//press again to toggle
-javascript:
-if (typeof aoeuToggle != "object") var aoeuToggle = [];
-(function(){
-    var headers=document.getElementsByTagName("header");
-    var len=headers.length;
-    for(var i=0;i<len;i++){
-        if (aoeuToggle[i] != 1){
-            headers[i].style.visibility = "hidden";
-            aoeuToggle[i]=1;
-        } else{
-            headers[i].style.visibility = "initial";
-            aoeuToggle[i]=0;
-        }
-    }
-})();
-
-//version 3 (final)
 /*
-hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CSS style
-press again to toggle
+Hides _all_ elements in a webpage with "position:fixed" and "position:sticky" CSS style.
+Press again to toggle.
+"visibility:hidden" can fail (rarely) because https://allyjs.io/tutorials/hiding-elements.html#the-css-properties-display-and-visibility
 */
 javascript:
 if (typeof aoeuToggle != "number"){
