@@ -1,0 +1,1 @@
+javascript:(function(){window.open('http://jisho.org/search/' + window.getSelection().toString())})();
