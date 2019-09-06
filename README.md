@@ -3,3 +3,5 @@
 
 [Hide webpage floating elements (alt ver).js](Hide%20webpage%20floating%20elements%20(alt%20ver).js) different implementation (see first comment in file)  
 *This one seems to work on all sites, and should be strictly superior to the original version.
+
+Set the bookmarklet as home page, for easy Alt+Home activation
