@@ -11,11 +11,21 @@ Set the bookmarklet as home page, for easy Alt+Home activation
 ## Miscellaneous simple but useful ones
 
 get document.title
-```javascript
+```js
 javascript:var myWindow = window.open(); myWindow.document.write(document.title); void 0;
 ```
 
 toggle document.body.contentEditable
-```javascript
+```js
 javascript:if(document.body.contentEditable != "true") document.body.contentEditable="true"; else if(document.body.contentEditable != "false") document.body.contentEditable="false"; void 0;
+```
+
+view on sci-hub 
+```js
+javascript:location.href = location.origin.replace(/^https/, 'http') + '.sci-hub.se' + location.pathname + location.search
+```
+
+view on sci-hub (new tab)
+```js
+javascript: (function(){ window.open(location.origin.replace%28/%5Ehttps/, 'http') + '.sci-hub.se' + location.pathname + location.search, '_blank')})();
 ```
