@@ -10,7 +10,12 @@ Set the bookmarklet as home page, for easy Alt+Home activation
 
 ## Miscellaneous simple but useful ones
 
-get document.title
+get document.title (alert)
+```js
+javascript:alert(document.title); void 0;
+```
+
+get document.title (new window)
 ```js
 javascript:var myWindow = window.open(); myWindow.document.write(document.title); void 0;
 ```
